@@ -1,0 +1,6 @@
+- name: Noticias
+  slug: noticias
+- name: Tutoriales
+  slug: tutoriales
+- name: Herramientas
+  slug: herramientas
