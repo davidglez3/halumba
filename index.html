@@ -4,12 +4,19 @@ title: Inicio
 ---
 
 <h1>Últimos posts</h1>
-<ul>
-  {% for post in site.posts limit:5 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <small>{{ post.date | date: "%d %b %Y" }}</small>
-      <p>{{ post.excerpt }}</p>
-    </li>
+
+<div class="posts-container">
+  {% for post in site.posts %}
+    <div class="post-card">
+      {% if post.image %}
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+      {% endif %}
+      <div class="post-content">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <small>{{ post.date | date: "%d %b %Y" }}</small>
+        <p>{{ post.excerpt }}</p>
+        <a class="read-more" href="{{ post.url }}">Leer más</a>
+      </div>
+    </div>
   {% endfor %}
-</ul>
+</div>
