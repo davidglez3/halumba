@@ -1,0 +1,15 @@
+---
+layout: home
+title: Inicio
+---
+
+<h1>Últimos posts</h1>
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small>{{ post.date | date: "%d %b %Y" }}</small>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
