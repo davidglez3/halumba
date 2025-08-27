@@ -2,7 +2,7 @@ title: Blog de Ciberseguridad
 description: Noticias, tutoriales y recursos sobre ciberseguridad
 baseurl: "" # dejar vacío si se publica en username.github.io
 url: "https://tu-usuario.github.io"
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
