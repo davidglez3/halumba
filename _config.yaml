@@ -1,0 +1,23 @@
+title: Blog de Ciberseguridad
+description: Noticias, tutoriales y recursos sobre ciberseguridad
+baseurl: "" # dejar vacío si se publica en username.github.io
+url: "https://tu-usuario.github.io"
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+markdown: kramdown
+
+# Opciones de comentarios
+disqus:
+  shortname: tu-shortname
+
+# Configuración de categorías
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      categories: []
