@@ -1,0 +1,10 @@
+<header>
+  <nav>
+    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <ul>
+      {% for category in site.data.categories %}
+        <li><a href="{{ '/categories/' | append: category.slug | relative_url }}">{{ category.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
