@@ -1,13 +1,6 @@
----
-layout: home
-title: Inicio
----
-
-<h1>Últimos posts</h1>
-
 <div class="posts-container">
   {% for post in site.posts %}
-    <div class="post-card">
+    <div class="post-card" data-categories="{{ post.categories | join: ',' }}">
       {% if post.image %}
         <img src="{{ post.image }}" alt="{{ post.title }}">
       {% endif %}
